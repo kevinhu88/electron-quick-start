@@ -1,12 +1,13 @@
 {
-  "name": "electron-quick-start",
+  "name": "electron-quick-start-apns",
   "version": "1.0.0",
   "description": "A minimal Electron application",
-  "main": "main.js",
+  "main": "src/main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dist-mac": "node build-dist.js"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/kevinhu88/electron-quick-start",
   "keywords": [
     "Electron",
     "quick",
@@ -17,6 +18,12 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^5.0.0"
+    "electron": "^5.0.0",
+    "electron-builder": "^20.39.0"
+  },
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "electron-log": "^3.0.5",
+    "node-gyp": "^4.0.0"
   }
 }
